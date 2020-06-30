@@ -42,6 +42,8 @@ class Backend():
         return config_file
 
     def get_backend(self):
+        return "nvidia"
+        
         """ Return the backend from either the `FACESWAP_BACKEND` Environment Variable or from
         the :loc:`config/.faceswap` configuration file. """
         # Check if environment variable is set, if so use that
